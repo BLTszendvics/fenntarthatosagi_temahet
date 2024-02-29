@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="quiz_script.js" defer></script>
+
+</head>
+<body>
+    <div>
+
+        <div id="quiz-panel">
+            <h2 id="question">
+                Kerdes
+            </h2>
+            <form>
+    
+                <input type="radio" id="va" name="answers"> 
+                <label for="va" id="answer_a">Valasz</label>
+                <br>
+                <input type="radio" id="vb" name="answers"> 
+                <label for="vb" id="answer_b">Valasz</label>
+                <br>
+                <input type="radio" id="vc" name="answers"> 
+                <label for="vc" id="answer_c">Valasz</label>
+                <br>
+                <br>
+    
+                <input type="button" value="Tovább" onclick="Next();">
+    
+            </form>
+        </div>
+        <div id="solution-panel">
+            <p id="solution">
+
+            </p>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

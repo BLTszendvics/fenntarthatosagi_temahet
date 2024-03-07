@@ -1,0 +1,120 @@
+.t-container {
+
+    padding: 15%;
+    background-color: gray;
+
+}
+
+.c-container {
+
+    background: white;
+
+}
+
+.c-row {
+
+    display: flex;
+    width: 100%;
+
+}
+
+.c-card {
+    
+    width: 33%;
+
+    padding: 1%;
+
+}
+
+.c-middle-card {
+
+    animation-name: c-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: initial;
+
+}
+
+.c-inner-card {
+
+    background-color: green;
+    padding: 3%;
+    border-radius: 20px 20px;
+
+}
+
+.c-img {
+
+    width: 100%;
+    border-radius: 20px 20px;
+
+}
+
+.c-1 {
+
+    animation-delay: 0s;
+
+}
+.c-2 {
+
+    animation-delay: 0.5s;
+
+}
+.c-3 {
+
+    animation-delay: 1s;
+
+}
+
+.c-block {
+
+    display: none;
+
+    animation-name: c-block;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: initial;
+
+}
+
+@keyframes c-block {
+
+    0% {
+
+        visibility: hidden;
+
+    }
+    100% {
+
+        visibility: visible;
+
+    }
+
+}
+
+
+
+
+@keyframes c-animation {
+
+    0% {
+
+        padding: 1%;
+
+    }
+
+    50% {
+
+        padding: 5%;
+
+    }
+
+    100% {
+
+        padding: 1%;
+
+    }
+
+}

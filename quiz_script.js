@@ -34,6 +34,16 @@ let Solutions = [
 
 ];
 
+let Radios = [
+
+    document.getElementById("radio-a"),
+    document.getElementById("radio-b"),
+    document.getElementById("radio-c"),
+
+]
+
+let Elements = document.getElementsByClassName("d-answer");
+
 let Questions = new Array();
 
 let qIndex = 0;
@@ -68,29 +78,31 @@ function LoadQuestion() {
     document.getElementById("answer_a").innerHTML = Questions[qIndex].answer_a + Questions[qIndex].score_a;
     document.getElementById("answer_b").innerHTML = Questions[qIndex].answer_b + Questions[qIndex].score_b;
     document.getElementById("answer_c").innerHTML = Questions[qIndex].answer_c + Questions[qIndex].score_c;
+    
+    document.getElementById("error").style.display = "none";
 
 }
 
 function Next() {
 
-    if (!(document.getElementById("va").checked || document.getElementById("vb").checked || document.getElementById("vc").checked)) {
+    if (!(Radios[0].checked || Radios[1].checked || Radios[2].checked)) {
 
-        alert("baj baj");
+        document.getElementById("error").style.display = "block";
 
     }
     else {
 
-        if (document.getElementById("va").checked) {
+        if (Radios[0].checked) {
 
             score += Questions[qIndex].score_a;
 
         }
-        else if (document.getElementById("vb").checked) {
+        else if (Radios[1].checked) {
 
             score += Questions[qIndex].score_b;
 
         }
-        else if (document.getElementById("vc").checked) {
+        else if (Radios[2].checked) {
 
             score += Questions[qIndex].score_c;
 
@@ -123,12 +135,26 @@ function Next() {
 
             LoadQuestion();
 
-            /*document.getElementById("va").checked = false;
-            document.getElementById("vb").checked = false;
-            document.getElementById("vc").checked = false;*/
+            /*Radios[0].checked = false;
+            Radios[0].checked = false;
+            Radios[0].checked = false;*/
 
         }
 
     }
+
+}
+
+function clickedOption(o) {
+
+    Radios[o].checked = true;
+
+    for (let i = 0; i < Radios.length; i++) {
+
+        Elements[i].classList.remove("selected");
+
+    }
+
+    Elements[o].classList.add("selected");
 
 }

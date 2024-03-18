@@ -6,6 +6,7 @@
     <title>Document</title>
 
     <script src="quiz_script.js" defer></script>
+    <link rel="stylesheet" href="quiz_test_css.css">
 
 </head>
 <body>
@@ -16,19 +17,41 @@
                 Kerdes
             </h2>
             <form>
+                
+                <div class="d-answer" onclick="clickedOption(0)">
+                    <div>
+                        <input type="radio" id="radio-a" name="answers">
+                    </div>
+                    <div class="d-answer-inner">
+                        <label id="answer_a">Valasz</label>
+                    </div>
+                </div>
+                <br>
+                <div class="d-answer" onclick="clickedOption(1)">
+                    <div>
+                        <input type="radio" id="radio-b" name="answers">
+                    </div>
+                    <div class="d-answer-inner">
+                        <label id="answer_b">Valasz</label>
+                    </div>
+                </div>
+                <br>
+                <div class="d-answer" onclick="clickedOption(2)">
+                    <div>
+                        <input type="radio" id="radio-c" name="answers">
+                    </div>
+                    <div class="d-answer-inner">
+                        <label id="answer_c">Valasz</label>
+                    </div>
+                </div>
+                <br>
+                <br>
     
-                <input type="radio" id="va" name="answers"> 
-                <label for="va" id="answer_a">Valasz</label>
-                <br>
-                <input type="radio" id="vb" name="answers"> 
-                <label for="vb" id="answer_b">Valasz</label>
-                <br>
-                <input type="radio" id="vc" name="answers"> 
-                <label for="vc" id="answer_c">Valasz</label>
-                <br>
-                <br>
-    
-                <input type="button" value="Tovább" onclick="Next();">
+                <input id="button" type="button" value="Tovább" onclick="Next();">
+
+                <p style="display: none;" id="error">
+                    Kérem, válasszon ki egy elemet mielőtt tovább menne!
+                </p>
     
             </form>
         </div>

@@ -129,6 +129,7 @@ function Next() {
             document.getElementById("solution-panel").style.display = "block";
 
             document.getElementById("solution").innerHTML = Solutions[sIndex];
+            document.getElementById("solution-panel").style.display = "block";
 
         }
         else {

@@ -1,17 +1,21 @@
-function image_clicked() {
+function clickedOnCard(cindex) {
 
-    let o = document.getElementsByClassName("c-block")[0];
+    if (document.getElementsByClassName("side1")[cindex].style.display == "block") {
 
-    if (o.classList.contains('open')) {
+        document.getElementsByClassName("side1")[cindex].style.display = "none";
 
-        o.classList.remove('open');
-        o.classList.add('close');
+        document.getElementsByClassName("side2")[cindex].style.display = "block";
+
+        document.getElementsByClassName("mycard")[cindex].classList.toggle('side2On');
 
     }
     else {
 
-        o.classList.remove('close');
-        o.classList.add('open');
+        document.getElementsByClassName("side1")[cindex].style.display = "block";
+
+        document.getElementsByClassName("side2")[cindex].style.display = "none";
+
+        document.getElementsByClassName("mycard")[cindex].classList.toggle('side2On');
 
     }
 

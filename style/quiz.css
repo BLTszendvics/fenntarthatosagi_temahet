@@ -94,3 +94,37 @@ input[type='radio']:checked {
     font-size: 32px;
 
 }
+
+label, #error {
+
+    color: black;
+
+}
+
+#question {
+
+    color: black;
+
+    margin-bottom: 5%;
+
+}
+
+#start-panel {
+
+    padding: 5%;
+
+}
+
+#start-panel input {
+
+    margin-top: 5%;
+
+}
+
+.blur {
+
+    transition: 0.5s all;
+
+    filter: blur(4px);
+
+}

@@ -51,25 +51,23 @@ let qMax = 13;
 
 let score = 0;
 
-fetch("questions.json")
+let ready = false;
+
+let go = true;
+
+fetch("scripts/questions.json")
     .then(json => json.json())
     .then(file => {
-
+        
         file.questions.forEach(element => {
 
             Questions.push(new Question(element.question, element.answer_a, element.answer_b, element.answer_c, element.score_a, element.score_b, element.score_c))
 
         });
 
-        Load();
+        ready = true;
 
-    });
-
-function Load() {
-
-    LoadQuestion();
-
-}
+});
 
 function LoadQuestion() {
 
@@ -90,57 +88,92 @@ function Next() {
         document.getElementById("error").style.display = "block";
 
     }
+    else if (go) {
+
+        document.getElementById("quiz-panel").children[0].classList.toggle("blur");
+        document.getElementById("quiz-panel").children[1].children[0].classList.toggle("blur");
+
+        go = false;
+
+        setTimeout(() => {
+            
+            go = true;
+
+            document.getElementById("quiz-panel").children[0].classList.toggle("blur");
+            document.getElementById("quiz-panel").children[1].children[0].classList.toggle("blur");
+        
+            if (Radios[0].checked) {
+
+                score += Questions[qIndex].score_a;
+    
+            }
+            else if (Radios[1].checked) {
+    
+                score += Questions[qIndex].score_b;
+    
+            }
+            else if (Radios[2].checked) {
+    
+                score += Questions[qIndex].score_c;
+    
+            }
+    
+            qIndex++;
+    
+            if (qIndex == qMax) {
+    
+                let sIndex = 0;
+    
+                if (score < 31 && score > 21) {
+    
+                    sIndex = 1;
+    
+                }
+                else if (score > 30) {
+    
+                    sIndex = 2;
+    
+                }
+    
+                document.getElementById("quiz-panel").style.display = "none";
+                document.getElementById("solution-panel").style.display = "block";
+    
+                document.getElementById("solution").innerHTML = Solutions[sIndex];
+                document.getElementById("solution-panel").style.display = "block";
+    
+            }
+            else {
+    
+                LoadQuestion();
+    
+                /*Radios[0].checked = false;
+                Radios[0].checked = false;
+                Radios[0].checked = false;*/
+    
+            }
+
+        }, "500");
+
+    }
+
+}
+
+function Start() {
+
+    if (!ready) {
+
+        alert("várjá baj van");
+
+        console.log("o-óó gond van")
+
+    }
     else {
 
-        if (Radios[0].checked) {
+        LoadQuestion();
 
-            score += Questions[qIndex].score_a;
+        document.getElementById("start-panel").style.display = "none";
 
-        }
-        else if (Radios[1].checked) {
-
-            score += Questions[qIndex].score_b;
-
-        }
-        else if (Radios[2].checked) {
-
-            score += Questions[qIndex].score_c;
-
-        }
-
-        qIndex++;
-
-        if (qIndex == qMax) {
-
-            let sIndex = 0;
-
-            if (score < 31 && score > 21) {
-
-                sIndex = 1;
-
-            }
-            else if (score > 30) {
-
-                sIndex = 2;
-
-            }
-
-            document.getElementById("quiz-panel").style.display = "none";
-            document.getElementById("solution-panel").style.display = "block";
-
-            document.getElementById("solution").innerHTML = Solutions[sIndex];
-            document.getElementById("solution-panel").style.display = "block";
-
-        }
-        else {
-
-            LoadQuestion();
-
-            /*Radios[0].checked = false;
-            Radios[0].checked = false;
-            Radios[0].checked = false;*/
-
-        }
+        document.getElementById("quiz-panel").style.display = "block";
 
     }
 

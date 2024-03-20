@@ -96,6 +96,8 @@ function Next() {
         go = false;
 
         setTimeout(() => {
+
+            document.getElementById("bar").style.width = (100 / Questions.length * (qIndex+1)) + "%";
             
             go = true;
 

@@ -59,6 +59,9 @@ margin-left: 3.2rem;
     
 
   }
+  .detail-box{
+    font-size: 0.9rem;
+  }
   .kepdavid{
     width: 70%;
     margin-left: 100px;
@@ -71,7 +74,12 @@ margin-left: 3.2rem;
   .elsoszoveg , .masodikszoveg{
     margin-bottom: 50px;
   }
-
+.kartyakepek{
+  width: 60%;
+}
+.kartyacim{
+  margin-top: 15px;
+}
   ul{
     cursor: pointer;
   }
@@ -143,7 +151,7 @@ margin-left: 3.2rem;
 }
   .slider_section .detail-box h1 {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: bold !important;
     text-transform: uppercase;
     margin-bottom: 15px;
     color: black;

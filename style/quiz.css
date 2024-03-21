@@ -57,7 +57,7 @@ input[type='radio']:checked {
 
 }
 
-#button {
+#button, #button1 {
 
     padding: 0.5%;
     font-size: 24px;
@@ -65,9 +65,18 @@ input[type='radio']:checked {
     border-radius: 5px 5px;
     border: solid 1px black;
 
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    cursor: pointer;
+
 }
 
-#button:hover {
+#button:hover, #button1:hover {
 
     background-color: rgb(124, 202, 202);
 
@@ -169,25 +178,18 @@ label,
     color: white;
     
     transition: all 0.7s ease;
-    
-}
-
-button {
-
-    display: block;
-    margin: auto;
-    border: none;
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px;
-    cursor: pointer;
 
 }
 
-button:active {
+button[class="active"] {
 
-    width: 58px;
-    height: 28px;
+    color: green;
+
+}
+
+.carousel-indicators .active {
+
+    height: 7px !important;
+    margin-top: -2px
 
 }

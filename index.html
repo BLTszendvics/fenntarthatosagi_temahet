@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Projekt</title>
+  <title>Egészséges életmód</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style/css.css">
 
   <link rel="stylesheet" href="style/cards.css">
@@ -17,6 +20,7 @@
   <link rel="stylesheet" href="style/quiz.css">
   <script src="scripts/quiz.js" defer></script>
 
+  <link rel="icon" href="nyeh.png" type="image/icon type">
 
 
 </head>
@@ -27,7 +31,7 @@
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand">
-          <a href="#" class="logo"> <i class="bx bxs-heart"></i>Valami egészség</a>
+          <a href="#" class="logo"> <i class="bx bxs-heart"></i>Egészséges Életmód</a>
 
         </a>
 
@@ -36,421 +40,507 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav  ">
             <li class="nav-item active">
-              <a class="nav-link">Előnyök </span></a>
+              <a class="nav-link " href="#receptek">Receptek </span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"> Információk</a>
+              <a class="nav-link" href="#egeszseg"> Egészséges Életmód</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Kaják</a>
+              <a class="nav-link" href="#etelek">Ételek</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Quiz</a>
+              <a class="nav-link" href="#quiz">Quiz</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Elérhetőségek</a>
+              <a class="nav-link" href="#keszitok">Készítők</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
-  <section class="slider_section ">
-    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+  <div class="container">
+    <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container ">
-            <div class="row">
-              <div class="col-md-6 bal ">
-                <div class="detail-box">
-                  <h1>
-                    Tegyél magadért, <br>
-                    Légy egészséges!
-                  </h1>
-                  <p class="felso">
-                    “A fizikai aktivitás hiánya minden ember állapotát lerombolja, míg a mozgás és a rendszeres sport
-                    óvja és megőrzi azt.”
-                    <br>
-                    -Platón-
+        <div class="carousel-item active" style="overflow: hidden;" data-bs-interval="10000">
+          <div class="row">
+            <div class="col-md-6 bal ">
+              <div class="detail-box">
+                <h1>
+                  Becsüld magad, <br>
+                  és egészséged!
+                </h1>
+                <p class="felso">
+                  “Az egészség nem egyetlen tett. Hanem szokásaink összessége. Azzá válunk, amit rendszeresen teszünk.”
+                  <br>
+                  -Arisztotelész-
 
-                  </p>
-                </div>
+                </p>
               </div>
-              <div class="col-md-6 jobb">
-                <div class="img-box">
-                  <img class="kep" src="nyeh.png" alt="">
+            </div>
+            <div class="col-md-6 jobb">
+              <div class="img-box">
+                <img class="kep" src="nyeh.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <div class="row">
+            <div class="col-md-6 bal ">
+              <div class="detail-box">
+                <h1>
+                  Az orvos kezel,  <br>
+                  a természet gyógyít.
+
+                </h1>
+                <p class="felso">
+                  “Élhetsz száz évig, hogyha feladod azokat a dolgokat, amik miatt száz évig akarsz élni.”
+                  <br>
+                  -Woody Allen-
+
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 jobb">
+              <div class="img-box">
+                <img class="kep" src="nyeh.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <div class="row">
+            <div class="col-md-6 bal ">
+              <div class="detail-box">
+                <h1>
+                  Tegyél magadért, <br>
+                  Légy egészséges!
+                </h1>
+                <p class="felso">
+                  “A fizikai aktivitás hiánya minden ember állapotát lerombolja, míg a mozgás és a rendszeres sport
+                  óvja és megőrzi azt.”
+                  <br>
+                  -Platón-
+
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 jobb">
+              <div class="img-box">
+                <img class="kep" src="nyeh.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <section class="service_section layout_padding" id="receptek">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h1 class="detail-box" id="boldd">
+            Receptek
+          </h1>
+          <p>
+            Első lépés az egészségesebb életmódhoz az egészséges táplálkozás
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box-xd">
+                <img class="kartyakepek" src="ceklasrizotto.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5 class="kartyacim">
+                  Céklás Rizottó
+                </h5>
+                <hr>
+                <p class="kartyaszoveg">
+                  A hűtő tartalma sem lesz bökkenő ezzel az egyszerű recepttel, az összevalók bátran variálhatóak
+                  <hr>
+                  Elkészítés: 55perc
+                  <hr>
+                  Nehézség: Közepes-Gyors
+                  <hr>
+                  <a href="https://www.nosalty.hu/recept/ceklas-rizotto?adag=1#ingredients">Teljes recept és
+                    hozzávalók </a>
+
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box-xd">
+                <img class="kartyakepek" src="gofri.jpeg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5 class="kartyacim">
+                  Erdeigyümölcsös gofri laktóz és glutén nélkül
+                </h5>
+                <hr>
+                <p>
+                  akik érzékenyek a gluténra vagy a tejre,
+                  ezzel a recepttel nektek sem kell lemondanotok az édes élvezetekről!
+                  <hr>
+                  Nehézség: Könnyű - gyors
+                  <hr>
+                  Elkészítés: 35perc
+
+
+                  <hr>
+                  <a href="https://www.nosalty.hu/recept/erdeigyumolcsos-gofri-laktoz-gluten-nelkul">Teljes recept
+                    és
+                    hozzávalók </a>
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box-xd">
+                <img class="kartyakepek" src="curry.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5 class="kartyacim">
+                  Húsgolyók házi zöldcurry-szószban
+                </h5>
+                <hr>
+                <p>
+                  Curry tésztával könnyen és gyorsan lehet vele bármilyen
+                  fogást ízesíteni. Beszerezhetjük készen is, de még finomabb, ha mi magunk dobjuk össze
+                  <hr>
+                  Nehézség: Könnyű-Gyors
+
+                  <hr>
+                  Elkészítés: 45perc
+                  <hr>
+                  <a href="https://www.nosalty.hu/recept/husgolyok-hazi-zoldcurry-szoszban">Teljes recept
+                    és
+                    hozzávalók </a>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about_section layout_padding" id="egeszseg">
+    <div class="container  ">
+      <div class="heading_container heading_center">
+        <h2>
+          <span>Az egészséges életmód fontossága</span>
+        </h2>
+        <hr>
+        <p>
+          Az egészségfejlesztés napjaink egyik legnagyobb kihívása
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box-xd">
+            <img class="kepdavid" src="david.jpg" alt="">
+            <br>
+            <p class="kepalatt">
+              "Ne állj meg, ha fáradt vagy, akkor állj meg, ha végeztél."
+              <br>
+              -David Goggins-
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3 class="elsoszoveg">
+              Mit is jelent az egészséges életmód?
+            </h3>
+            <hr>
+            <p class="masodikszoveg">
+              Az egészséges életmód azt jelenti, hogy úgy éled az életed- fizikailag, mentálisan, lelkileg, de
+              mindenképpen tudatosan- hogy az a testi-lelki egészségedet szolgálja.
+            </p>
+            <hr>
+
+            <p class="harmadikszoveg">
+              az emberek egészségműveltségének szintje alapvetően határozza meg egy társadalom életét
+              kulturális és gazdasági szempontból is
+              mindehhez pedig az emberek minőségi információkkal kell, hogy
+              rendelkezzenek.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center" id="etelek">
+        <hr>
+        <h2>
+          <span>Ételek és azok előnyei illetve hátrányai</span>
+        </h2>
+        <hr>
+      </div>
+      <div class="why_container">
+        <div class="row">
+          <div class="col-12 col-md-4 out-card">
+            <div class="mycard bad" onclick="clickedOnCard(0)" style="background-image: url('images/chips.jpg');">
+              <div class="inner">
+                <div class='mycard-content'>
+
+                  <div class="side1" style="display: block;">
+                  </div>
+                  <div class="side2" style="display: none;">
+                    <h4>
+                      Chips
+                    </h4>
+                    <p>
+                      A chips magas zsírtartalommal rendelkezik, különösen telített zsírokban gazdag, amelyek
+                      érelmeszesedéshez szívbetegségekhez vezethetnek. Magas nátriumtartalma miatt hajlamosít a
+                      magas vérnyomás kialakulására, emiatt pedig szív- és érrendszeri problémák is jelentkezhetnek.
+
+                      A mesterséges ízfokozók, tartósítószereket és egyéb adalékanyagokat gyomor- és bélrendszeri
+                      problémákhoz vezethetnek. Ezenk kivül emésztésekor glicidol szabadul fel, ami rákkeltő.
+                    </p>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-12 col-md-4 out-card">
+            <div class="mycard bad" onclick="clickedOnCard(1)" style="background-image: url('images/hamburger.jpg');">
+              <div class="inner">
+                <div class='mycard-content'>
+
+                  <div class="side1" style="display: block;">
+                  </div>
+                  <div class="side2" style="display: none;">
+                    <h4>
+                      Gyorséttermi kaja
+                    </h4>
+                    <p>
+                      A gyorsételek károsítják a belső szerveket, felborítja a szervezet sav-bázis egyensúlyát,
+                      elhízáshoz, cukorbetegséshez és szívelégtelenséghez is vezethet. Általános lesz tőle a
+                      fáradtság, rosszkedv, fásultság. Rövid távon memóriaveszteség, hosszú távon
+                      teljesítőképesség-csökkenés is kialakulhat. De ez csak pár negatívum.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 out-card">
+            <div class="mycard bad" onclick="clickedOnCard(2)" style="background-image: url('images/cola.png');">
+              <div class="inner">
+                <div class='mycard-content'>
+
+                  <div class="side1" style="display: block;">
+                  </div>
+                  <div class="side2" style="display: none;">
+                    <h4>
+                      Szénsavas üdítők
+                    </h4>
+                    <p>
+                      Ezek az üdítők rendkívül magas cukortartalommal rendelkezhetnek. A túlzott cukorfogyasztás
+                      hozzájárulhat a túlsúlyhoz, cukorbetegség kialakulásához.
+
+                      A szénhidrátos üdítők magas koffeintartalommal is rendelkezhetnek, különösen a kólák és az
+                      energiaitalok. A túlzott koffeinfogyasztás álmatlansághoz, szorongáshoz, gyomorpanaszokhoz és
+                      szívritmuszavarokhoz vezethet.
+
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 out-card">
+            <div class="mycard good" onclick="clickedOnCard(3)" style="background-image: url('images/kesudio.jpg');">
+              <div class="inner">
+                <div class='mycard-content'>
+
+                  <div class="side1" style="display: block;">
+                  </div>
+                  <div class="side2" style="display: none;">
+                    <h4>
+                      Olajos magvak
+                    </h4>
+                    <p>
+                      A kesudió, földimogyoró és társai kifejezetten egészségesek a bennük található egészséges
+                      zsírok és fehérjék miatt. Azonban ez nem igaz a sózótt és pörkölt magvakra, mert azok károsak.
+                      Az olajos magvak előnye még, hogy rengeteg vitamin és ásványi anyag található bennük.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 out-card">
+            <div class="mycard good" onclick="clickedOnCard(4)" style="background-image: url('images/lazac.jpg');">
+              <div class="inner">
+                <div class='mycard-content'>
+
+                  <div class="side1" style="display: block;">
+                  </div>
+                  <div class="side2" style="display: none;">
+                    <h4>
+                      Grillezett lazac friss zöldségekkel és quinoával
+                    </h4>
+                    <p>
+                      Egy egészséges főétel például a grillezett lazac friss zöldségekkel és quinoával. A lazac
+                      kitűnő fehérjeforrás, amely gazdag omega-3 zsírsavakban, amelyek jótékonyak az agy és a szív
+                      egészségére. Emellett tele van vitaminokkal és ásványi anyagokkal, mint például a B-vitaminok,
+                      a D-vitamin és a magnézium.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 out-card">
+            <div class="mycard good" onclick="clickedOnCard(5)" style="background-image: url('images/tea.webp');">
+              <div class="inner">
+                <div class='mycard-content'>
+
+                  <div class="side1" style="display: block;">
+                  </div>
+                  <div class="side2" style="display: none;">
+                    <h4>
+                      Zöld tea
+                    </h4>
+                    <p>
+                      A zöld tea rengeteg egészségügyi előnnyel jár. Gazdag antioxidánsokban, mint például a
+                      katechinek, amelyek segíthetnek a szabad gyökök elleni küzdelemben és hozzájárulhatnak a
+                      krónikus betegségek megelőzéséhez. Emellett a zöld tea kismértékben tartalmaz koffeint, ami
+                      élénkítő hatással bír anélkül, hogy hirtelen energiazuhanást okozna, mint például a kávé.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <hr>
+  <section class="team_section layout_padding">
+    <div class="container-fluid">
+
+
+      <div class="heading_container heading_center" id="quiz">
+
+
+        <div id="start-panel">
+
+          <h1>
+            Töltsd ki a kvízünket, hogy megtudd mennyire vagy egészséges!
+          </h1>
+
+          <input id="button" type="button" value="Kezdés!" onclick="Start();">
+
+        </div>
+        <hr>
+        <div id="quiz-panel" style="display: none;">
+          <h2 id="question">
+            Kerdes
+          </h2>
+          <form>
+
+            <div>
+              <div class="d-answer" onclick="clickedOption(0)">
+                <div>
+                  <input type="radio" id="radio-a" name="answers">
+                </div>
+                <div class="d-answer-inner">
+                  <label id="answer_a">Valasz</label>
+                </div>
+              </div>
+              <br>
+              <div class="d-answer" onclick="clickedOption(1)">
+                <div>
+                  <input type="radio" id="radio-b" name="answers">
+                </div>
+                <div class="d-answer-inner">
+                  <label id="answer_b">Valasz</label>
+                </div>
+              </div>
+              <br>
+              <div class="d-answer" onclick="clickedOption(2)">
+                <div>
+                  <input type="radio" id="radio-c" name="answers">
+                </div>
+                <div class="d-answer-inner">
+                  <label id="answer_c">Valasz</label>
+                </div>
+              </div>
+              <br>
+              <br>
+            </div>
+
+
+
+            <input id="button" type="button" value="Tovább" onclick="Next();">
+
+            <p style="display: none;" id="error">
+              Kérem, válasszon ki egy elemet mielőtt tovább menne!
+            </p>
+
+          </form>
+
+          <section>
+
+            <div class="barOut">
+
+              <span id="bar"></span>
+
+            </div>
+
+          </section>
+
+        </div>
+        <div id="solution-panel">
+          <p id="solution">
+
+          </p>
         </div>
 
       </div>
-      <section class="service_section layout_padding">
-        <div class="service_container">
-          <div class="container ">
-            <div class="heading_container heading_center">
-              <h1 class="detail-box" id="boldd">
-                Valami cim
-              </h1>
-              <p>
-                Valami
-              </p>
-            </div>
-            <div class="row">
-              <div class="col-md-4 ">
-                <div class="box ">
-                  <div class="img-box">
-                    <img src="nyeh.png" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h5>
-                      Valami
-                    </h5>
-                    <p>
-                      Valami
-                    </p>
 
-
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 ">
-                <div class="box ">
-                  <div class="img-box">
-                    <img src="nyeh.png" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h5>
-                      Valami
-                    </h5>
-                    <p>
-                      Valami
-                    </p>
-
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 ">
-                <div class="box ">
-                  <div class="img-box">
-                    <img src="nyeh.png" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h5>
-                      Valami
-                    </h5>
-                    <p>
-                      Valami
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about_section layout_padding">
-        <div class="container  ">
-          <div class="heading_container heading_center">
-            <h2>
-              <span>Az egészséges életmód fontossága</span>
-            </h2>
-            <hr>
-            <p>
-              Az egészségfejlesztés napjaink egyik legnagyobb kihívása
-            </p>
-          </div>
-          <div class="row">
-            <div class="col-md-6 ">
-              <div class="img-box-xd">
-                <img class="kepdavid" src="david.jpg" alt="">
-                <br>
-                <p class="kepalatt">
-                 "Ne állj meg, ha fáradt vagy, akkor állj meg, ha végeztél."
-                 <br>
-                 -David Goggins-
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="detail-box">
-                <h3 class="elsoszoveg">
-                  Mit is jelent az egészséges életmód?
-                </h3>
-<hr>
-                <p class="masodikszoveg">
-                  Az egészséges életmód azt jelenti, hogy úgy éled az életed- fizikailag, mentálisan, lelkileg, de
-                  mindenképpen tudatosan- hogy az a testi-lelki egészségedet szolgálja.
-                </p>
-<hr>
-
-                <p class="harmadikszoveg">
-                  az emberek egészségműveltségének szintje alapvetően határozza meg egy társadalom életét
-                  kulturális és gazdasági szempontból is
-                  mindehhez pedig az emberek minőségi információkkal kell, hogy
-                  rendelkezzenek.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="why_section layout_padding">
-        <div class="container">
-          <div class="heading_container heading_center">
-            <h2>
-              <span>Ételek és azok előnyei illetve hátrányai</span>
-            </h2>
-            <hr>
-          </div>
-          <div class="why_container">
-            <div class="row">
-              <div class="col-12 col-md-4 out-card">
-                <div class="mycard bad" onclick="clickedOnCard(0)" style="background-image: url('images/chips.jpg');">
-                  <div class="inner">
-                    <div class='mycard-content'>
-
-                      <div class="side1" style="display: block;">
-                      </div>
-                      <div class="side2" style="display: none;">
-                        <h4>
-                          Chips
-                        </h4>
-                        <p>
-                          A chips magas zsírtartalommal rendelkezik, különösen telített zsírokban gazdag, amelyek
-                          érelmeszesedéshez szívbetegségekhez vezethetnek. Magas nátriumtartalma miatt hajlamosít a
-                          magas vérnyomás kialakulására, emiatt pedig szív- és érrendszeri problémák is jelentkezhetnek.
-
-                          A mesterséges ízfokozók, tartósítószereket és egyéb adalékanyagokat gyomor- és bélrendszeri
-                          problémákhoz vezethetnek. Ezenk kivül emésztésekor glicidol szabadul fel, ami rákkeltő.
-                        </p>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 out-card">
-                <div class="mycard bad" onclick="clickedOnCard(1)"
-                  style="background-image: url('images/hamburger.jpg');">
-                  <div class="inner">
-                    <div class='mycard-content'>
-
-                      <div class="side1" style="display: block;">
-                      </div>
-                      <div class="side2" style="display: none;">
-                        <h4>
-                          Gyorséttermi kaja
-                        </h4>
-                        <p>
-                          A gyorsételek károsítják a belső szerveket, felborítja a szervezet sav-bázis egyensúlyát,
-                          elhízáshoz, cukorbetegséshez és szívelégtelenséghez is vezethet. Általános lesz tőle a
-                          fáradtság, rosszkedv, fásultság. Rövid távon memóriaveszteség, hosszú távon
-                          teljesítőképesség-csökkenés is kialakulhat. De ez csak pár negatívum.
-                        </p>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 out-card">
-                <div class="mycard bad" onclick="clickedOnCard(2)" style="background-image: url('images/cola.png');">
-                  <div class="inner">
-                    <div class='mycard-content'>
-
-                      <div class="side1" style="display: block;">
-                      </div>
-                      <div class="side2" style="display: none;">
-                        <h4>
-                          Szénsavas üdítők
-                        </h4>
-                        <p>
-                          Ezek az üdítők rendkívül magas cukortartalommal rendelkezhetnek. A túlzott cukorfogyasztás
-                          hozzájárulhat a túlsúlyhoz, cukorbetegség kialakulásához.
-
-                          A szénhidrátos üdítők magas koffeintartalommal is rendelkezhetnek, különösen a kólák és az
-                          energiaitalok. A túlzott koffeinfogyasztás álmatlansághoz, szorongáshoz, gyomorpanaszokhoz és
-                          szívritmuszavarokhoz vezethet.
-
-                        </p>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 out-card">
-                <div class="mycard good" onclick="clickedOnCard(3)"
-                  style="background-image: url('images/kesudio.jpg');">
-                  <div class="inner">
-                    <div class='mycard-content'>
-
-                      <div class="side1" style="display: block;">
-                      </div>
-                      <div class="side2" style="display: none;">
-                        <h4>
-                          Olajos magvak
-                        </h4>
-                        <p>
-                          A kesudió, földimogyoró és társai kifejezetten egészségesek a bennük található egészséges
-                          zsírok és fehérjék miatt. Azonban ez nem igaz a sózótt és pörkölt magvakra, mert azok károsak.
-                          Az olajos magvak előnye még, hogy rengeteg vitamin és ásványi anyag található bennük.
-                        </p>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 out-card">
-                <div class="mycard good" onclick="clickedOnCard(4)" style="background-image: url('images/lazac.jpg');">
-                  <div class="inner">
-                    <div class='mycard-content'>
-
-                      <div class="side1" style="display: block;">
-                      </div>
-                      <div class="side2" style="display: none;">
-                        <h4>
-                          Grillezett lazac friss zöldségekkel és quinoával
-                        </h4>
-                        <p>
-                          Egy egészséges főétel például a grillezett lazac friss zöldségekkel és quinoával. A lazac
-                          kitűnő fehérjeforrás, amely gazdag omega-3 zsírsavakban, amelyek jótékonyak az agy és a szív
-                          egészségére. Emellett tele van vitaminokkal és ásványi anyagokkal, mint például a B-vitaminok,
-                          a D-vitamin és a magnézium.
-                        </p>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 out-card">
-                <div class="mycard good" onclick="clickedOnCard(5)" style="background-image: url('images/tea.webp');">
-                  <div class="inner">
-                    <div class='mycard-content'>
-
-                      <div class="side1" style="display: block;">
-                      </div>
-                      <div class="side2" style="display: none;">
-                        <h4>
-                          Zöld tea
-                        </h4>
-                        <p>
-                          A zöld tea rengeteg egészségügyi előnnyel jár. Gazdag antioxidánsokban, mint például a
-                          katechinek, amelyek segíthetnek a szabad gyökök elleni küzdelemben és hozzájárulhatnak a
-                          krónikus betegségek megelőzéséhez. Emellett a zöld tea kismértékben tartalmaz koffeint, ami
-                          élénkítő hatással bír anélkül, hogy hirtelen energiazuhanást okozna, mint például a kávé.
-                        </p>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-<hr>
-      <section class="team_section layout_padding">
-        <div class="container-fluid">
-
-
-          <div class="heading_container heading_center">
-
-
-            <div id="start-panel">
-
-              <h1>
-                Töltsd ki a kvízünket, hogy megtudd egészséges vagy-e!
-              </h1>
-
-              <input id="button" type="button" value="Kezdés!" onclick="Start();">
-
-            </div>
-<hr>
-            <div id="quiz-panel" style="display: none;">
-              <h2 id="question">
-                Kerdes
-              </h2>
-              <form>
-
-                <div>
-                  <div class="d-answer" onclick="clickedOption(0)">
-                    <div>
-                      <input type="radio" id="radio-a" name="answers">
-                    </div>
-                    <div class="d-answer-inner">
-                      <label id="answer_a">Valasz</label>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="d-answer" onclick="clickedOption(1)">
-                    <div>
-                      <input type="radio" id="radio-b" name="answers">
-                    </div>
-                    <div class="d-answer-inner">
-                      <label id="answer_b">Valasz</label>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="d-answer" onclick="clickedOption(2)">
-                    <div>
-                      <input type="radio" id="radio-c" name="answers">
-                    </div>
-                    <div class="d-answer-inner">
-                      <label id="answer_c">Valasz</label>
-                    </div>
-                  </div>
-                  <br>
-                  <br>
-                </div>
+    </div>
 
 
 
-                <input id="button" type="button" value="Tovább" onclick="Next();">
+  </section>
 
-                <p style="display: none;" id="error">
-                  Kérem, válasszon ki egy elemet mielőtt tovább menne!
-                </p>
+  <footer class="info_section layout_padding2 text-center" id="keszitok">
 
-              </form>
+    <p>
+      © 2024 Minden Jog Fenntartva - Created by: Reha Máté & Bali Bálint
+    </p>
 
-              <section>
-
-                <div class="barOut">
-
-                  <span id="bar"></span>
-
-                </div>
-
-              </section>
-
-            </div>
-            <div id="solution-panel">
-              <p id="solution">
-
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-      </section>
-
-      <footer class="info_section layout_padding2 text-center">
-
-        <p>
-          © 2024 Minden Jog Fenntartva - Created by: Reha Máté & Bali Bálint
-        </p>
-
-      </footer>
+  </footer>
 
 
 

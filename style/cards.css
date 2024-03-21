@@ -9,7 +9,6 @@
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,0) 36%, rgba(0,135,26,1) 75%, rgba(0,135,26,1) 100%);
 
-    background-image: url('https://hips.hearstapps.com/hmg-prod/images/spiced-up-potato-chips-1601911089.jpg?crop=1.00xw:0.668xh;0,0.0987xh&resize=1200:*');
     background-position: center;
     background-repeat: no-repeat;
 
@@ -22,7 +21,6 @@
     background: rgb(162,0,0);
     background: linear-gradient(135deg, rgba(162,0,0,1) 0%, rgba(218,156,33,1) 70%);
 
-    background-image: url('https://hips.hearstapps.com/hmg-prod/images/spiced-up-potato-chips-1601911089.jpg?crop=1.00xw:0.668xh;0,0.0987xh&resize=1200:*');
     background-position: center;
     background-repeat: no-repeat;
 
@@ -89,6 +87,8 @@
 .side2 p {
 
     text-align: justify;
+
+    font-size: 1rem;
 
 }
 

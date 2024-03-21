@@ -387,3 +387,16 @@ margin-left: 3.2rem;
     margin-bottom: 15px;
     color: black;
   }
+
+
+  /*Ez en voltam - Bali*/
+  footer { 
+    background-color: #fef3e2;
+  }
+  br {
+    content: " ";
+    display: block;
+    margin-top: 2%;
+    line-height:22px;
+  }
+  

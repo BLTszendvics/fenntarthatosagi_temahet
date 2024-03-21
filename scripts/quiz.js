@@ -73,9 +73,9 @@ function LoadQuestion() {
 
     document.getElementById("question").innerHTML = Questions[qIndex].question;
 
-    document.getElementById("answer_a").innerHTML = Questions[qIndex].answer_a + Questions[qIndex].score_a;
-    document.getElementById("answer_b").innerHTML = Questions[qIndex].answer_b + Questions[qIndex].score_b;
-    document.getElementById("answer_c").innerHTML = Questions[qIndex].answer_c + Questions[qIndex].score_c;
+    document.getElementById("answer_a").innerHTML = Questions[qIndex].answer_a;
+    document.getElementById("answer_b").innerHTML = Questions[qIndex].answer_b;
+    document.getElementById("answer_c").innerHTML = Questions[qIndex].answer_c;
     
     document.getElementById("error").style.display = "none";
 
@@ -89,6 +89,12 @@ function Next() {
 
     }
     else if (go) {
+
+        for (let i = 0; i < Radios.length; i++) {
+
+            Elements[i].classList.remove("selected");
+    
+        }
 
         document.getElementById("quiz-panel").children[0].classList.toggle("blur");
         document.getElementById("quiz-panel").children[1].children[0].classList.toggle("blur");
@@ -148,9 +154,9 @@ function Next() {
     
                 LoadQuestion();
     
-                /*Radios[0].checked = false;
                 Radios[0].checked = false;
-                Radios[0].checked = false;*/
+                Radios[1].checked = false;
+                Radios[2].checked = false;
     
             }
 

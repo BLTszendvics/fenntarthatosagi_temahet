@@ -94,6 +94,12 @@ input[type='radio']:checked {
 
 }
 
+label {
+
+    font-size: 1.5rem;
+
+}
+
 label,
 #error {
 
@@ -161,21 +167,25 @@ label,
     color: white;
     
     transition: all 0.7s ease;
+    
 }
 
 button {
+
     display: block;
     margin: auto;
-    margin-top: 20px;
     border: none;
     border-radius: 2px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
     padding: 10px 20px;
     cursor: pointer;
+
 }
 
 button:active {
+
     width: 58px;
     height: 28px;
+
 }

@@ -82,13 +82,15 @@
 
     text-align: center;
 
+    font-size: 40px;
+
 }
 
 .side2 p {
 
     text-align: justify;
 
-    font-size: 1rem;
+    font-size: 18px;
 
 }
 
@@ -149,4 +151,78 @@
             left: 200%;
         }
     }
+}
+
+@media screen and (min-width: 800px) {
+
+    .side2 p {
+
+        font-size: 24px;
+
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .side2 h4 {
+
+        font-size: 18px;
+
+    }
+
+    .side2 p {
+
+        font-size: 12px;
+
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .side2 h4 {
+
+        font-size: 20px;
+
+    }
+
+    .side2 p {
+
+        font-size: 14px;
+
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    .side2 h4 {
+
+        font-size: 24px;
+
+    }
+
+    .side2 p {
+
+        font-size: 16px;
+
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+
+    .side2 h4 {
+
+        font-size: 24px;
+
+    }
+
+    .side2 p {
+
+        font-size: 16px;
+
+    }
+
 }

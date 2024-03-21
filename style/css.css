@@ -146,10 +146,11 @@ margin-left: 3.2rem;
     margin-left: auto;
   }
   
-#boldd{
-  font-weight: bold;
-}
-  .slider_section .detail-box h1 {
+  #boldd{
+    font-weight: bold;
+    font-size: 32px;
+  }
+  .slider_section .detail-box h1, .detail-box h1 {
     font-size: 3rem;
     font-weight: bold !important;
     text-transform: uppercase;
@@ -162,7 +163,7 @@ margin-left: 3.2rem;
     font-size: 18px;
   }
   
-  .slider_section .img-box {
+  .float-anim {
     width: 100%;
     -webkit-animation: upDown 5s infinite;
             animation: upDown 5s infinite;
@@ -420,3 +421,11 @@ margin-left: 3.2rem;
     line-height:22px;
   }
   
+  .navbar-toggler{ 
+    background-color: lightgreen;
+  }
+
+  .b0 {
+    position: sticky;
+    margin-bottom: 0px;
+  }

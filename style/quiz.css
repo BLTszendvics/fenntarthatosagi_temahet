@@ -132,7 +132,7 @@ label,
 .barOut {
     
     height: 20px;
-    width: 40%;
+    width: 80%;
     
     margin: auto;
     margin-top: 3%;
@@ -178,4 +178,36 @@ button {
 button:active {
     width: 58px;
     height: 28px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+    .barOut {
+
+        width: 65%;
+
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .barOut {
+
+        width: 50%;
+
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    .barOut {
+
+        width: 30%;
+
+    }
+
 }

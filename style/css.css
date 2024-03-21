@@ -59,6 +59,18 @@ margin-left: 3.2rem;
     
 
   }
+  .kepdavid{
+    width: 70%;
+    margin-left: 100px;
+  }
+  .kepalatt{
+    margin-left: 15px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .elsoszoveg , .masodikszoveg{
+    margin-bottom: 50px;
+  }
 
   ul{
     cursor: pointer;

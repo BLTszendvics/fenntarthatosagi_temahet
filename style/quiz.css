@@ -95,9 +95,11 @@ input[type='radio']:checked {
 }
 
 label {
-
-    font-size: 1.5rem;
-
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 3.2rem;
 }
 
 label,
